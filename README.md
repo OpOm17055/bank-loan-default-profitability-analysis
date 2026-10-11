@@ -91,7 +91,7 @@ A second check: comparing return across grades on all loans makes riskier grades
 ## Repository structure
 
 ```
-bank-loan-default-profitability-analysis//
+bank-loan-default-profitability-analysis/
 ├── notebooks/
 │   └── clean_loans.ipynb           
 ├── sql/
