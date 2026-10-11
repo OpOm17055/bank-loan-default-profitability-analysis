@@ -93,18 +93,12 @@ A second check: comparing return across grades on all loans makes riskier grades
 ```
 bank-loan-default-analysis/
 ├── notebooks/
-│   └── clean_loans.ipynb            # cleaning + feature engineering (Colab)
+│   └── clean_loans.ipynb           
 ├── sql/
-│   └── bank_loan_analysis.sql       # table + CSV load, then 12 business questions
+│   └── bank_loan_analysis.sql       
 ├── powerbi/
-│   └── bank_loan_dashboard.pbix     # the dashboard
-├── images/                          # README chart and dashboard screenshots
-├── FINDINGS.md                      # every query result
+│   └── bank_loan_dashboard.pbix    
+├── images/                         
+├── FINDINGS.md                     
 └── README.md
 ```
-
-## How to run
-
-1. Download `accepted_2007_to_2018Q4.csv` from Kaggle and run `notebooks/clean_loans.ipynb` to create `loans_clean.csv`.
-2. In MySQL Workbench, open `sql/bank_loan_analysis.sql`, set the CSV path in Part A, and run it.
-3. Open `powerbi/bank_loan_dashboard.pbix`, then go to Transform data → Edit parameters → `CsvPath`, set your path to `loans_clean.csv`, and refresh.
